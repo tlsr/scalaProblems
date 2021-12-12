@@ -23,4 +23,11 @@ class NumberOfElementsTest {
     assertEquals(10, recursiveNumberOfElements(VALID_LIST))
     assertEquals(600, recursiveNumberOfElements(LONG_VALID_LIST))
   }
+
+  @Test
+  def foldNumberOfElementsTest(): Unit = {
+    assertEquals(0, recursiveNumberOfElements(NIL))
+    assertEquals(10, recursiveNumberOfElements(VALID_LIST))
+    assertEquals(600, recursiveNumberOfElements(LONG_VALID_LIST))
+  }
 }
