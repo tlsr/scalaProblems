@@ -1,5 +1,9 @@
 package problem02
 
+import listTestUtils.ListConstants.NIL
+import listTestUtils.ListConstants.ONE_ELEMENT_LIST
+import listTestUtils.ListConstants.TWO_ELEMENT_LIST
+import listTestUtils.ListConstants.VALID_LIST
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertThrows
 import org.junit.jupiter.api.Test
@@ -7,14 +11,9 @@ import problem02.Utils.lastButOne
 
 class LastButOneElementTest {
 
-  val LONG_VALID_LIST = List(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
-  val NIL = Nil
-  val ONE_ELEMENT_LIST = List(1)
-  val TWO_ELEMENT_LIST = List(1,2)
-
   @Test
   def validListTest(): Unit = {
-    assertEquals(8, lastButOne(LONG_VALID_LIST))
+    assertEquals(8, lastButOne(VALID_LIST))
     assertEquals(1, lastButOne(TWO_ELEMENT_LIST))
   }
 
